@@ -6,7 +6,8 @@ import Announcements from './pages/Announcements';
 import Contact from './pages/Contact';
 import About from './pages/about';
 import Explore from './pages/Explore';
-import Navigation from './components/Navigation'; // Assuming you have a Navigation component
+import Navigation from './components/Navigation';
+import './App.css';
 
 function App() {
   return (

@@ -1,0 +1,53 @@
+*{
+    background-color: #000;
+    color:white;
+}
+
+.navigation {
+    background-color: #000; /* Black background */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+  }
+  
+  .navigation .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #008f68; /* Dark green color for the club name/logo */
+    text-decoration: none;
+  }
+  
+  .navigation .menu a {
+    color: #ddd; /* Lighter text for menu items */
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s;
+  }
+  
+  .navigation .menu a:not(:last-child) {
+    margin-right: 1rem;
+  }
+  
+  .navigation .menu a.active, .navigation .menu a:hover {
+    color: #008f68; /* Dark green color for active/hover states */
+  }
+  
+  /* Add media query for responsive design */
+  @media (max-width: 768px) {
+    .navigation {
+      flex-direction: column;
+    }
+    .navigation .menu {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .navigation .menu a {
+      text-align: center;
+      padding: 0.5rem;
+      border-top: 1px solid #333; /* Add a subtle border to each link */
+    }
+  }
+  
